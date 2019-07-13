@@ -17,7 +17,7 @@ body {
   background: #f2f2f2;
 }
 
-/* header */
+/* header style */
 
 header {
   background: #4a90e2;
@@ -54,7 +54,7 @@ nav>div i {
   margin-left: 8px;
 }
 
-/* postlist */
+/* postlist style */
 
 .postslist {
   display: flex;
@@ -105,7 +105,7 @@ nav>div i {
   border-radius: 50%;
 }
 
-/* content */
+/* content style */
 
 .post-content {
   margin-top: 15px;
@@ -138,4 +138,45 @@ nav>div i {
 .comment span {
   font-weight: bold;
   margin-right: 6px;
+}
+
+/* media queries */
+
+@media (max-width: 1000px) {
+  header nav {
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 740px) {
+  header nav {
+    background: red;
+    min-width: 400px;
+  }
+  .post {
+    width: 500px;
+  }
+}
+
+@media (max-width: 520px) {
+  header nav {
+    flex-direction: column;
+  }
+  .post {
+    width: 300px;
+  }
+}
+
+@media (max-width: 340px) {
+  .post {
+    width: 200px;
+  }
+  .comment {
+    flex-direction: column;
+    align-items: center
+  }
+  .comment img {
+    margin-bottom: -10px;
+    position: relative;
+  }
 }
