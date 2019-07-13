@@ -150,7 +150,6 @@ nav>div i {
 
 @media (max-width: 740px) {
   header nav {
-    background: red;
     min-width: 400px;
   }
   .post {
